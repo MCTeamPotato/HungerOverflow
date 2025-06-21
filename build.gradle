@@ -48,5 +48,5 @@ java {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    it.options.release = 8
+    it.options.release = 17
 }
