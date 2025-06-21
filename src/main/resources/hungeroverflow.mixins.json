@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "me.kall.hungeroverflow.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.8",
+  "mixins": [
+    "FoodDataMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
