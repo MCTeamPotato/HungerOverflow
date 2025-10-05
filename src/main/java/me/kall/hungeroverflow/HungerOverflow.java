@@ -1,6 +1,6 @@
 package me.kall.hungeroverflow;
 
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.fml.common.Mod;
 
 @Mod(HungerOverflow.MOD_ID)
 public final class HungerOverflow {
