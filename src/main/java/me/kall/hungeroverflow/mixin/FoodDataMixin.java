@@ -13,7 +13,7 @@ public abstract class FoodDataMixin {
 
     @Shadow private float saturationLevel;
 
-    @Inject(method = "eat(IF)V", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "add", at = @At("HEAD"), cancellable = true)
     private void onEat(int foodLevelModifier, float saturationLevelModifier, CallbackInfo ci) {
         float overflowFoodLevel = 0.0F;
         if (this.foodLevel + foodLevelModifier > 20) overflowFoodLevel = (float) this.foodLevel + (float) foodLevelModifier - 20.0F;
